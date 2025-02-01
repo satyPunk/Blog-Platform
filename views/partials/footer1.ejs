@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Footer</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      size: 100%;
+    }
+
+    footer {
+      background-color: #121315;
+      padding: 40px 20px;
+      size:auto;
+    }
+
+    .container {
+      max-width: 3500px;
+      
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .column {
+      flex: 1 1 calc(25% - 20px);
+      margin: 10px;
+      min-width: 200px;
+    }
+
+    .column h3 {
+      color: #2a8ded;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    .column p {
+      line-height: 1.8;
+    }
+
+    .column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .column ul li {
+      margin-bottom: 10px;
+    }
+
+    .column ul li a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .column ul li a:hover {
+      color: #2a8ded;
+    }
+
+    .subscribe input, .subscribe button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .subscribe button {
+      background-color: #2a8ded;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .subscribe button:hover {
+      background-color: #1a6cb7;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 1.5em;
+      color: #bbb;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #2a8ded;
+      transform: translateY(-5px);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .column {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <footer>
+    <div class="container">
+      <div class="column">
+        <h3>About Us</h3>
+        <p>Your content about the company or project.</p>
+      </div>
+      <div class="column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#faq">F.A.Q</a></li>
+          <li><a href="#cookies-policy">Cookies Policy</a></li>
+          <li><a href="#terms-of-services">Terms Of Service</a></li>
+          <li><a href="#support">Support</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </div>
+      <div class="column subscribe">
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Your email here">
+        <button>Subscribe</button>
+      </div>
+      <div class="column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
