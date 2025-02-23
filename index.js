@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 //main.css
 
 const app =express()
-const port =3000
+const port =3002
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static("public"))
